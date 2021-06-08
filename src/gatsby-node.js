@@ -315,6 +315,7 @@ exports.onPostBuild = async ({graphql}, pluginOptions) => {
 
     // The siteUrl is only available after we have the returned query results
     options.siteUrl = siteURL;
+    options.pathPrefix = '';
 
     await copyStylesheet(options);
 
