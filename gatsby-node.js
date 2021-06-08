@@ -410,10 +410,11 @@ exports.onPostBuild = /*#__PURE__*/function () {
           case 21:
             // The siteUrl is only available after we have the returned query results
             options.siteUrl = siteURL;
-            _context2.next = 24;
+            options.pathPrefix = '';
+            _context2.next = 25;
             return copyStylesheet(options);
 
-          case 24:
+          case 25:
             resourcesSiteMapsArray = []; // Because it's possible to map duplicate names and/or sources to different
             // sources, we need to serialize it in a way that we know which source names
             // we need and which types they are assigned to, independently from where they
@@ -431,58 +432,58 @@ exports.onPostBuild = /*#__PURE__*/function () {
             });
             indexSiteMap = manager.getIndexXml(options); // Save the generated xml files in the public folder
 
-            _context2.prev = 28;
-            _context2.next = 31;
+            _context2.prev = 29;
+            _context2.next = 32;
             return utils.outputFile(indexSitemapFile, indexSiteMap);
 
-          case 31:
-            _context2.next = 36;
+          case 32:
+            _context2.next = 37;
             break;
 
-          case 33:
-            _context2.prev = 33;
-            _context2.t0 = _context2["catch"](28);
+          case 34:
+            _context2.prev = 34;
+            _context2.t0 = _context2["catch"](29);
             console.error(_context2.t0);
 
-          case 36:
+          case 37:
             _i = 0, _resourcesSiteMapsArr = resourcesSiteMapsArray;
 
-          case 37:
+          case 38:
             if (!(_i < _resourcesSiteMapsArr.length)) {
-              _context2.next = 51;
+              _context2.next = 52;
               break;
             }
 
             sitemap = _resourcesSiteMapsArr[_i];
             filePath = resourcesSitemapFile.replace(/:resource/, sitemap.type); // Save the generated xml files in the public folder
 
-            _context2.prev = 40;
-            _context2.next = 43;
+            _context2.prev = 41;
+            _context2.next = 44;
             return utils.outputFile(filePath, sitemap.xml);
 
-          case 43:
-            _context2.next = 48;
+          case 44:
+            _context2.next = 49;
             break;
 
-          case 45:
-            _context2.prev = 45;
-            _context2.t1 = _context2["catch"](40);
+          case 46:
+            _context2.prev = 46;
+            _context2.t1 = _context2["catch"](41);
             console.error(_context2.t1);
 
-          case 48:
+          case 49:
             _i++;
-            _context2.next = 37;
+            _context2.next = 38;
             break;
 
-          case 51:
+          case 52:
             return _context2.abrupt("return");
 
-          case 52:
+          case 53:
           case "end":
             return _context2.stop();
         }
       }
-    }, _callee2, null, [[28, 33], [40, 45]]);
+    }, _callee2, null, [[29, 34], [41, 46]]);
   }));
 
   return function (_x2, _x3) {
