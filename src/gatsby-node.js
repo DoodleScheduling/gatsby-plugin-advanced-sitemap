@@ -277,8 +277,8 @@ exports.onPostBuild = async ({graphql, pathPrefix}, pluginOptions) => {
     // to the default `pages` sitemap. Otherwise they will be ignored.
     const options = pluginOptions.addUncaughtPages ? _.merge(defaultOptions, pluginOptions) : Object.assign({}, defaultOptions, pluginOptions);
 
-    const indexSitemapFile = path.join(PUBLICPATH, pathPrefix, options.output);
-    const resourcesSitemapFile = path.join(PUBLICPATH, pathPrefix, RESOURCESFILE);
+    const indexSitemapFile = path.join(PUBLICPATH, options.output);
+    const resourcesSitemapFile = path.join(PUBLICPATH, RESOURCESFILE);
 
     delete options.plugins;
     delete options.createLinkInHead;
