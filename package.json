@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-plugin-advanced-sitemap",
+  "name": "@doodle/gatsby-plugin-advanced-sitemap",
   "description": "Advanced plugin for generating configurable XML sitemaps with linked media for better SEO and human-readable XSL templates.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "author": "Ghost Foundation",
   "homepage": "https://ghost.org/docs/jamstack/gatsby/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tryghost/gatsby-plugin-advanced-sitemap.git"
+    "url": "https://github.com/DoodleScheduling/gatsby-plugin-advanced-sitemap.git"
   },
   "engines": {
     "node": ">= 12.19.0"
