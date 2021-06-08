@@ -10,7 +10,7 @@
     "url": "https://github.com/tryghost/gatsby-plugin-advanced-sitemap.git"
   },
   "engines": {
-    "node": ">= 12.19.0"
+    "node": ">= 12"
   },
   "bugs": {
     "url": "https://github.com/tryghost/gatsby-plugin-advanced-sitemap/issues"
